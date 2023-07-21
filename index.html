@@ -2,6 +2,30 @@
 
 <head>
 	<meta charset="utf-8">
+	<title>Search Engine Selector</title>
+	<style>
+		* {
+			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			
+		}
+
+		#searchForm {
+			height: 100px;
+			margin: 10px;
+			position: relative;
+			border: 3px solid green; 
+			
+		}
+
+		#goButton{
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+		}
+
+	</style>
 	<script>
 		// TODO: create a handler
 		function setSearchEngine(){
@@ -44,7 +68,8 @@
 	<label> <input type="radio" name="engine" value="bing"> Bing</label>
 	<label> <input type="radio" name="engine" value="ask"> Ask</label>
 	<!--Submit-->
-	<input type="submit" value="Go!">
+	<br>
+	<input id="goButton" type="submit" value="  Go!  ">
 </form>
 
 </body>
